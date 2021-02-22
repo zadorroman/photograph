@@ -1,0 +1,47 @@
+.title {
+    font: 400 180px/200px $play;
+    font-style: italic;
+    color: $brown;
+    opacity: 0.2;
+    letter-spacing: 0.1em;
+    z-index: 1;
+}
+
+.subtitle {
+
+}
+
+.link {
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    line-height: 18px;
+    color: $brown;
+    letter-spacing: 0.22em;
+    font-weight: normal;
+    color: #800505;
+    align-items: center;
+    display: inline-block;
+    transition: all .3s;
+
+    &::before {
+        position: absolute;
+        content: '\e904';
+        font-family: 'icomoon';
+        font-size: 130px;
+        color: $brown;
+        transform: translateX(-37%);
+        opacity: 0.1;
+        transition: all .3s;
+        pointer-events: none;
+
+    }
+
+    &:hover {
+
+        &::before {
+            opacity: 1;
+        }
+    }
+
+}

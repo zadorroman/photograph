@@ -1,0 +1,30 @@
+.nav {
+    position: fixed;
+    width: 100%;
+
+    &__logo {
+        position: relative;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $brown;
+        font: 400 52px/67px $play;
+        text-transform: uppercase;
+        position: absolute;
+        left: 25px;
+        top: 25px;
+    }
+
+    &__menu {
+        position: absolute;
+        line-height: 36px;
+        top: 25px;
+        right: 70px;
+        display: flex;
+    }
+}
+
+.yolo {
+    height: 100vh;
+}
