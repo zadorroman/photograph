@@ -1,0 +1,73 @@
+.port {
+    padding-bottom: 1px;
+
+    &__evel {
+        margin-top: 200px;
+        margin-bottom: 60px;
+    }
+
+    &__wrap {
+        display: flex;
+
+        &:last-child {
+            margin-top: -25px;
+            align-items: flex-end;
+            margin-bottom: 200px;
+        }
+    }
+
+    &__circle {
+        @include size(201px);
+        position: relative;
+        margin-left: 5.6%;
+        margin-right: 13.3%;
+        margin-top: 106px;
+
+        &::before {
+            @include size(100%);
+            @include pos($t:0, $l:0);
+            content: '';
+            border: 1px solid $brown;
+            opacity: 0.3;
+            border-radius: 50%;
+            transition: all .3s;
+            
+        }
+    }
+
+    &__link {
+        @include pos($t:27px, $r:-30px);
+        background-color: #fff;
+        font-size: 18px;
+        line-height: 22px;
+        width: 92px;
+        text-align: center;
+        color: $black;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            position: absolute;
+            content: '';
+            background-color: #fff;
+            @include size(100%, 53px);
+            z-index: -1;
+        }
+
+        &:last-child {
+        @include pos($t:unset, $r:unset, $b:25px, $l:-11px);
+
+            &::before {
+            height: 40px;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 350px;
+        margin-right: 10.538%;
+    }
+}

@@ -1,10 +1,11 @@
 .header {
     padding-top: 1px;
-    height: 100vh;
+    min-height: 100vh;
     background-color: $back;
+    padding-bottom: 1px;
 
     &__title {
-    user-select: none;
+
     }
 
     &__subtitle {
@@ -49,6 +50,7 @@
             line-height: 26px;
             max-width: 250px;
             width: 100vh;
+            margin-left: -10px;
         }
     }
 
@@ -56,6 +58,7 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 42px;
+        margin-left: -10px;
 
     }
 }

@@ -1,0 +1,42 @@
+.goals {
+    background-color: $back;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin: 115px 30px;
+        flex-wrap: wrap;
+
+
+    }
+
+    &__count {
+        font: 400 100px/100px $play;
+        letter-spacing: 0.1em;
+        color: $brown;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__box {
+        &:nth-of-type(2n + 1) {
+            
+            .goals__count {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        max-width: 250px;
+        width: 100%;
+    }
+}

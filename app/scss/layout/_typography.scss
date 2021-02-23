@@ -5,10 +5,19 @@
     opacity: 0.2;
     letter-spacing: 0.1em;
     z-index: 1;
+    user-select: none;
 }
 
 .subtitle {
+    font: 400 48px/52px $play;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    position: absolute;
+    bottom: 18px;
+}
 
+.evel {
+    position: relative;
 }
 
 .link {
@@ -19,7 +28,7 @@
     color: $brown;
     letter-spacing: 0.22em;
     font-weight: normal;
-    color: #800505;
+    color: $brown;
     align-items: center;
     display: inline-block;
     transition: all .3s;

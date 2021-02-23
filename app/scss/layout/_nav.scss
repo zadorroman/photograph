@@ -7,24 +7,33 @@
     }
 
     &__link {
+        @include pos($t:25px, $l:25px);
         text-decoration: none;
         color: $brown;
         font: 400 52px/67px $play;
         text-transform: uppercase;
-        position: absolute;
-        left: 25px;
-        top: 25px;
     }
 
     &__menu {
-        position: absolute;
-        line-height: 36px;
-        top: 25px;
-        right: 70px;
-        display: flex;
-    }
-}
+        @include pos($t:55px, $r:70px);
+        background: $back;
 
-.yolo {
-    height: 100vh;
+        &::before {
+            content: '';
+            @include size(65px);
+            @include pos($t:-23px, $l:20px);
+            border-radius: 50%;
+            border: 1px solid $brown;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        &::after {
+            content: '';
+            @include size(33px,1px);
+            @include pos($t:10px, $l:51px);
+            background-color: $brown;
+            opacity: 0.3;
+        }
+    }
 }
