@@ -1,0 +1,106 @@
+.review {
+    background-color: $back;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    &__evel {
+margin-top: 90px;
+margin-bottom: 85px;
+    }
+
+    &__slider {
+        display: flex;
+    }
+}
+
+.slider {
+    &__item {
+        display: flex;
+        position: relative;
+        margin-bottom: 180px;
+    }
+
+    &__img {
+    }
+
+    &__pic {
+
+    }
+
+    &__info {
+
+    }
+
+    &__comment {
+        width: 340px;
+        font-size: 14px;
+        line-height: 26px;
+        position: relative;
+        margin-left: 290px;
+        margin-top: 20px;
+
+        &::before {
+            content: '“';
+            font: 400 200px $play;
+            color: $brown;
+            @include pos($t:-90px, $l:-105px);
+            opacity: 0.1;
+        }
+    }
+
+    &__nav {
+        @extend .port__circle;
+    @include pos($t:50%, $l:50%);
+    transform: translateY(-50%);
+    }
+
+    &__author {
+        position: absolute;
+        right: 0;
+        bottom: -200px;
+    }
+
+    &__name {
+        margin-top: 10px;
+        margin-bottom: 90px;
+    }
+
+    &__prev {
+        @include pos($t:50%, $l:-50px);
+        transform: translateY(-50%);
+        font-size: 14px;
+        line-height: 36px;
+        color: $black;
+
+        &:before {
+            content: '';
+            @include size(60px, 1px);
+            @include pos($t:50%, $l:55px);
+            transform: translateY(-50%);
+            background-color: $brown;
+            opacity: 0.3;
+        }
+        &::after {
+            content: '';
+            background-color: $back;
+        }
+    }
+
+    &__next {
+        @include pos($t:50%, $r:-50px);
+        transform: translateY(-50%);
+        font-size: 14px;
+        line-height: 36px;
+        color: $black;
+
+        &:before {
+            content: '';
+            @include size(60px, 1px);
+            @include pos($t:50%, $r:55px);
+            transform: translateY(-50%);
+            background-color: $brown;
+            opacity: 0.3;
+        }
+    }
+
+}
